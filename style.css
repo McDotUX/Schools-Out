@@ -1,0 +1,54 @@
+.spinner {
+  width: 70px;
+  height: 70px;
+  background-color: #000;
+  border-radius: 70px;
+  margin: 100px auto;
+position: relative;
+  animation: spinner 8s infinite ease-out;
+}
+
+@keyframes spinner {
+  0% { opacity: 0;
+    top: 0px;
+    border-radius: 50px;
+    background-color: blue;
+
+    /* Lägg till stiler här: skala t ex ner den med: scale(0) */
+
+  } 
+
+  25% {
+    opacity: 0.7;
+    top: 100px;
+    border-radius: 10px;
+  }
+
+    50% {
+    opacity: 0.1;
+    top: 0px;
+    background-color: blue;
+    rotate: left;
+    border-radius: 50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  75% {
+    opacity: 0.7;
+    top: 200px;
+    border-radius: 10px;
+
+  }
+  100% {
+    opacity: 0.1;
+    top: 50px;
+    border border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    /* Lägg till stiler här: skala t ex den med scale(1) samtidigt som 
+     * du sätter opacity till 0 
+     */
+  }
+}
